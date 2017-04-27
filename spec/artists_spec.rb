@@ -18,14 +18,14 @@ describe("Artists") do
     end
   end
 
-  # describe("#save") do
-  #   it("adds an album to the array of saved albums") do
-  #     new_album = Artists.new("Let's Dance")
-  #     new_album.save()
-  #     expect(Artists.all()).to(eq([new_album]))
-  #   end
-  # end
-  #
+  describe("#save") do
+    it("adds an artist to the array of saved artists") do
+      new_artist = Artists.new("David Bowie")
+      new_artist.save()
+      expect(Artists.all()).to(eq([new_artist]))
+    end
+  end
+
   # describe(".clear") do
   #   it("clears the albums array") do
   #     Artists.new("Let's Dance").save()

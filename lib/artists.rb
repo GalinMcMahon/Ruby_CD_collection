@@ -14,10 +14,10 @@ class Artists
     @@artists
   end
 
-  # define_method(:save) do
-  #   @@artists.push(self)
-  # end
-  #
+  define_method(:save) do
+    @@artists.push(self)
+  end
+
   # define_singleton_method(:clear) do
   #   @@artists = []
   # end
