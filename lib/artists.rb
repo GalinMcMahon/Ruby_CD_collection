@@ -3,7 +3,7 @@ class Artists
 
   define_method(:initialize) do |artist_name|
     @artist_name = artist_name
-    # @id = @@artists.length().+(1)
+    @id = @@artists.length().+(1)
   end
   #
   define_method(:artist_name) do
@@ -21,10 +21,10 @@ class Artists
   define_singleton_method(:clear) do
     @@artists = []
   end
-  
-  # define_method(:id) do
-  #   @id
-  # end
+
+  define_method(:id) do
+    @id
+  end
   #
   # define_singleton_method(:find) do |id|
   #   found_artist = nil
