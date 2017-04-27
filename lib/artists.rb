@@ -18,10 +18,10 @@ class Artists
     @@artists.push(self)
   end
 
-  # define_singleton_method(:clear) do
-  #   @@artists = []
-  # end
-  #
+  define_singleton_method(:clear) do
+    @@artists = []
+  end
+  
   # define_method(:id) do
   #   @id
   # end

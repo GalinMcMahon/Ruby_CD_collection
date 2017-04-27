@@ -26,14 +26,14 @@ describe("Artists") do
     end
   end
 
-  # describe(".clear") do
-  #   it("clears the albums array") do
-  #     Artists.new("Let's Dance").save()
-  #     Artists.clear()
-  #     expect(Artists.all()).to(eq([]))
-  #   end
-  # end
-  #
+  describe(".clear") do
+    it("clears the artist array") do
+      Artists.new("Let's Dance").save()
+      Artists.clear()
+      expect(Artists.all()).to(eq([]))
+    end
+  end
+
   # describe("#id") do
   #   it("returns the id of the album") do
   #     new_album = Artists.new("Let's Dance")
