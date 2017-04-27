@@ -9,11 +9,11 @@ class Artists
   define_method(:artist_name) do
     @artist_name
   end
-  # #
-  # define_singleton_method(:all) do
-  #   @@artists
-  # end
   #
+  define_singleton_method(:all) do
+    @@artists
+  end
+
   # define_method(:save) do
   #   @@artists.push(self)
   # end
