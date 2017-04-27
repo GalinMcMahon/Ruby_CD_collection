@@ -17,4 +17,8 @@ class Albums
     @@albums.push(self)
   end
 
+  define_singleton_method(:clear) do
+    @@albums = []
+  end
+
 end

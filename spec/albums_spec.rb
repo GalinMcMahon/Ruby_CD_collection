@@ -26,6 +26,14 @@ describe("Albums") do
     end
   end
 
+  describe(".clear") do
+    it("clears the albums array") do
+      Albums.new("Let's Dance").save()
+      Albums.clear()
+      expect(Albums.all()).to(eq([]))
+    end
+  end
+
 end
 
  #
