@@ -28,7 +28,7 @@ describe("Artists") do
 
   describe(".clear") do
     it("clears the artist array") do
-      Artists.new("Let's Dance").save()
+      Artists.new("David Bowie").save()
       Artists.clear()
       expect(Artists.all()).to(eq([]))
     end
@@ -46,6 +46,15 @@ describe("Artists") do
       new_artist = Artists.new("David Bowie")
       new_artist.save()
       expect(Artists.find(new_artist.id())).to(eq(new_artist))
+    end
+  end
+
+  describe("#add_album") do
+    it("adds a new album to an artist") do
+      new_artist = Artists.new("David Bowie")
+      new_album = Albums.new("Let's Dance")
+      new_artist.add_album(new_album)
+      expect(new_artist.cds()).to(eq([new_album]))
     end
   end
 end
