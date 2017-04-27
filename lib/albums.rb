@@ -8,4 +8,8 @@ class Albums
   define_method(:album_name) do
     @album_name
   end
+
+  define_singleton_method(:all) do
+    @@albums
+  end
 end

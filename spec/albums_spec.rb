@@ -12,14 +12,14 @@ describe("Albums") do
     end
   end
 
+  describe(".all") do
+    it("is empty at first") do
+      expect(Albums.all()).to(eq([]))
+    end
+  end
 
 end
 
- #  describe(".all") do
- #    it("is empty at first") do
- #      expect(Albums.all()).to(eq([]))
- #    end
- #  end
  #
  # describe("#save") do
  #    it("adds an album to the array of saved albums") do
