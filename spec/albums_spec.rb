@@ -41,7 +41,6 @@ describe("Albums") do
     end
   end
 
-
   describe(".find") do
     it("returns album name by its id number") do
       new_album = Albums.new("Let's Dance")
@@ -49,22 +48,4 @@ describe("Albums") do
       expect(Albums.find(new_album.id())).to(eq(new_album))
     end
   end
-
 end
-
- #
- # describe("#save") do
- #    it("adds an album to the array of saved albums") do
- #      new_album = Albums.new("Let's Dance")
- #      new_album.save()
- #      expect(Albums.all()).to(eq(["Let's Dance"]))
- #    end
- #  end
- #
- # describe(".clear") do
- #    it("empties out all of the saved albums") do
- #      Albums.new("Let's Dance").save()
- #      Albums.clear()
- #      expect(Albums.all()).to(eq([]))
- #    end
- #  end
