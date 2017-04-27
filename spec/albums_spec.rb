@@ -42,14 +42,13 @@ describe("Albums") do
   end
 
 
-  # describe(".find") do
-  #   it("returns album name by its id number") do
-  #     new_album = Albums.new("Let's Dance")
-  #     new_album.save()
-  #     expect(Albums.find(new_album.id())).to(eq(new_album))
-  #
-  #   end
-  # end
+  describe(".find") do
+    it("returns album name by its id number") do
+      new_album = Albums.new("Let's Dance")
+      new_album.save()
+      expect(Albums.find(new_album.id())).to(eq(new_album))
+    end
+  end
 
 end
 

@@ -25,4 +25,14 @@ class Albums
   define_method(:id) do
     @id
   end
+
+  define_singleton_method(:find) do |id|
+    found_album = nil
+    @@albums.each() do |find_album|
+      if find_album.id().eql?(id)
+        found_album = find_album
+      end
+    end
+    found_album
+  end
 end
