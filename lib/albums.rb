@@ -3,6 +3,7 @@ class Albums
 
   define_method(:initialize) do |album_name|
     @album_name = album_name
+    @id = @@albums.length().+(1)
   end
 
   define_method(:album_name) do
@@ -21,4 +22,7 @@ class Albums
     @@albums = []
   end
 
+  define_method(:id) do
+    @id
+  end
 end
