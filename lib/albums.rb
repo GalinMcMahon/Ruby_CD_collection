@@ -12,4 +12,9 @@ class Albums
   define_singleton_method(:all) do
     @@albums
   end
+
+  define_method(:save) do
+    @@albums.push(self)
+  end
+
 end
