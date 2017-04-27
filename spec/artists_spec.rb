@@ -41,11 +41,11 @@ describe("Artists") do
     end
   end
 
-  # describe(".find") do
-  #   it("returns album name by its id number") do
-  #     new_album = Artists.new("Let's Dance")
-  #     new_album.save()
-  #     expect(Artists.find(new_album.id())).to(eq(new_album))
-  #   end
-  # end
+  describe(".find") do
+    it("returns artist name by its id number") do
+      new_artist = Artists.new("David Bowie")
+      new_artist.save()
+      expect(Artists.find(new_artist.id())).to(eq(new_artist))
+    end
+  end
 end

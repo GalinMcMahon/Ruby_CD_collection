@@ -25,14 +25,14 @@ class Artists
   define_method(:id) do
     @id
   end
-  #
-  # define_singleton_method(:find) do |id|
-  #   found_artist = nil
-  #   @@artists.each() do |find_artist|
-  #     if find_artist.id().eql?(id)
-  #       found_artist = find_artist
-  #     end
-  #   end
-  #   found_artist
-  # end
+
+  define_singleton_method(:find) do |id|
+    found_artist = nil
+    @@artists.each() do |find_artist|
+      if find_artist.id().eql?(id)
+        found_artist = find_artist
+      end
+    end
+    found_artist
+  end
 end
