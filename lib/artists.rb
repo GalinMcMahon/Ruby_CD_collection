@@ -27,11 +27,11 @@ class Artists
     @id
   end
 
-  define_singleton_method(:find) do |id|
+  define_singleton_method(:find) do |identification|
     found_artist = nil
-    @@artists.each() do |find_artist|
-      if find_artist.id().eql?(id)
-        found_artist = find_artist
+    @@artists.each() do |artist|
+      if artist.id().eql?(identification_to_i)
+        found_artist = artist
       end
     end
     found_artist
@@ -44,5 +44,4 @@ class Artists
   define_method(:add_album) do |album|
     @cds.push(album)
   end
-
 end
