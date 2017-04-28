@@ -26,10 +26,10 @@ class Albums
     @id
   end
 
-  define_singleton_method(:find) do |identification|
+  define_singleton_method(:find) do |id|
     found_album = nil
     @@albums.each() do |album|
-      if album.id().eql?(identification.to_i)
+      if album.id().eql?(id.to_i)
         found_album = album
       end
     end

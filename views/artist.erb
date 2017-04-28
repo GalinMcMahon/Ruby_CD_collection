@@ -3,9 +3,10 @@
 
 <ul>
   <% @artist.cds().each() do |cds| %>
-    <li><a href="/albums/<%= cds.id() %>"> <%= cds.album_name() %></a></li>
+    <li><a href="/albums/<%= cds.id() %>"><%= cds.album_name() %></a></li>
   <% end %>
 </ul>
 
-<a href="/artists/<%= @artist.id%>/albums/new">Add a new album</a>
+
+<a href="/artists/<%= @artist.id()%>/albums/new">Add a new album</a>
 <a href="/">Return to Main Page</a>
